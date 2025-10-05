@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sudoku</title>
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="nav-title">
+        <a href="../index.html">Sudoku</a> 
+    </div>
+    <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/selection.html">Select Game</a></li>
+        <li><a href="../pages/rules.html">Rules</a></li>
+        <li><a href="../pages/high-rank-scores.html">High Scores</a></li>
+        <li><a href="../pages/login.html" class="active">Login</a></li>
+        <li><a href="../pages/register.html">Register</a></li>
+    </ul>
+</nav>
+<main class="content-container">
+    <h1>User Log In</h1>
+    
+    <form class="form-container">
+        <div class="form-group">
+            <label for="username">username</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="password">password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        
+        <div class="form-group">
+            <button type="submit" class="form-button">Log in</button>
+        </div>
+    </form>
+    
+    <div class="form-switch">
+        <p>No Account? <a href="register.html">Register Now!</a></p>
+    </div>
+</main>
+</body>
+</html>

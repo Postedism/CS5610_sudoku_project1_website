@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hard Game - Sudoku</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/game.css"> 
+</head>
+<body>
+    <nav class="navbar">
+    <div class="nav-title">
+        <a href="../index.html">Sudoku</a> 
+    </div>
+    <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/selection.html" class="active">Select Game</a></li>
+        <li><a href="../pages/rules.html">Rules</a></li>
+        <li><a href="../pages/high-rank-scores.html">High Scores</a></li>
+        <li><a href="../pages/login.html">Login</a></li>
+        <li><a href="../pages/register.html">Register</a></li>
+    </ul>
+</nav>
+     <main class="game-container">
+    <!-- 游戏头部信息 -->
+    <div class="game-header">
+        <h1>困难模式</h1>
+        <div class="timer">12:34</div>
+    </div>
+
+    <!-- 数独棋盘 -->
+    <div class="sudoku-board board-9x9">
+        <!-- 第1行 -->
+        <div class="cell given">5</div>
+        <div class="cell given">3</div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell given">7</div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <!-- 第2行 -->
+        <div class="cell given">6</div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell given">1</div>
+        <div class="cell given">9</div>
+        <div class="cell given">5</div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <!-- 第3行 -->
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell given">9</div>
+        <div class="cell given">8</div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell given">6</div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <!-- 第4行 -->
+        <div class="cell given">8</div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell given">6</div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell given">3</div>
+        <!-- 第5行 -->
+        <div class="cell given">4</div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell given">8</div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell given">3</div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell given">1</div>
+        <!-- 第6行 -->
+        <div class="cell given">7</div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell given">2</div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell given">6</div>
+        <!-- 第7行 -->
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell given">6</div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell given">2</div>
+        <div class="cell given">8</div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <!-- 第8行 -->
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell given">4</div>
+        <div class="cell given">1</div>
+        <div class="cell given">9</div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell given">5</div>
+        <!-- 第9行 -->
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell given">8</div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell"><input type="number" min="1" max="9"></div>
+        <div class="cell given">7</div>
+        <div class="cell given">9</div>
+    </div>
+</main>
+</body>
+</html>

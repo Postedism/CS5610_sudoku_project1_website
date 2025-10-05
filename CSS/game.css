@@ -1,0 +1,117 @@
+i/* --- 游戏页面容器 --- */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 500px; /* 限制头部的最大宽度，与棋盘大致对齐 */
+    margin-bottom: 20px;
+}
+
+.game-header h1 {
+    margin: 0;
+}
+
+.timer {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* --- 数独棋盘主要样式 --- */
+.sudoku-board {
+    display: grid;
+    background-color: #fff;
+    border: 3px solid #333;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* --- 9x9 棋盘的具体网格设置 --- */
+.board-9x9 {
+    grid-template-columns: repeat(9, 1fr);
+    width: 90vmin; /* 90%的视口最小边长 */
+    max-width: 540px; /* 设置一个最大宽度 */
+    aspect-ratio: 1 / 1; /* 保持1:1的宽高比，确保是正方形 */
+}
+
+/* --- 单元格样式 --- */
+.cell {
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+/* 预设数字的样式 */
+.cell.given {
+    font-weight: bold;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+/* --- 使用伪类绘制3x3的粗边框 --- */
+
+/* 垂直粗线 (在第3和第6列之后) */
+.board-9x9 .cell:nth-child(3n) {
+    border-right: 3px solid #333;
+}
+/* 水平粗线 (在第3和第6行之后) */
+/* 选中第19到27个单元格 (第3行) */
+.board-9x9 .cell:nth-child(n+19):nth-child(-n+27) {
+    border-bottom: 3px solid #333;
+}
+/* 选中第46到54个单元格 (第6行) */
+.board-9x9 .cell:nth-child(n+46):nth-child(-n+54) {
+    border-bottom: 3px solid #333;
+}
+
+
+/* --- 单元格内输入框的样式 --- */
+.cell input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    font-size: 1em; /* 字体大小继承自父元素.cell */
+    color: #007BFF; /* 用户输入的数字为蓝色 */
+    background-color: transparent; /* 背景透明 */
+}
+
+/* 移除浏览器在number input上默认的上下箭头 */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* --- 6x6 棋盘的具体网格设置 --- */
+.board-6x6 {
+    grid-template-columns: repeat(6, 1fr); /* 改为6列 */
+    width: 80vmin;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+}
+
+/* 6x6 棋盘的粗边框 (假设是 3x2 的子网格) */
+/* 垂直粗线 (在第3列之后) */
+.board-6x6 .cell:nth-child(3n) {
+    border-right: 3px solid #333;
+}
+/* 水平粗线 (在第2和第4行之后) */
+.board-6x6 .cell:nth-child(n+7):nth-child(-n+12) { /* 第2行 */
+    border-bottom: 3px solid #333;
+}
+.board-6x6 .cell:nth-child(n+19):nth-child(-n+24) { /* 第4行 */
+    border-bottom: 3px solid #333;
+}
