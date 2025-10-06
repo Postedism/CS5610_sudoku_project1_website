@@ -250,3 +250,38 @@ body {
     margin-bottom: 0;
     line-height: 1.4; 
 }
+
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .nav-links {
+        flex-direction: column; 
+        width: 100%; 
+        margin-top: 10px; 
+    }
+
+    .nav-links li {
+        margin-left: 0; 
+        width: 100%; 
+        text-align: center; 
+    }
+    
+    .nav-links a {
+        padding: 10px; 
+        display: block; 
+        border-bottom: 1px solid #444; 
+    }
+    
+    .nav-links li:last-child a {
+        border-bottom: none; 
+    }
+    
+    body {
+        padding-top: 280px; 
+    }
+}
