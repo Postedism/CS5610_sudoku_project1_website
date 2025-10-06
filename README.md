@@ -1,6 +1,5 @@
 # CS5610_sudoku_project1_website
 A static sudoku website for project1
-Site is live at https://postedism.github.io/CS5610_sudoku_project1_website/
 Video Link:
 
 # Static Sudoku Website Project
@@ -10,7 +9,7 @@ The goal of this project is to build a multi-page, mobile-friendly static websit
 
 ## Live URL
 
-**[Click here to visit my website](https://your-username.github.io/your-repository-name/)**
+**[Click here to visit my website](https://github.com/Postedism/CS5610_sudoku_project1_website)**
 
 ## Author
 
@@ -51,4 +50,3 @@ I assumed that the term “simulated website” in the assignment meant that the
 * **Images:** Homepage images downloaded from royalty-free sources in **Unsplash**.
 * **Code Reference:** The technique for outlining Sudoku grid borders using `nth-child` was inspired by several online tutorials and github.
 
----
