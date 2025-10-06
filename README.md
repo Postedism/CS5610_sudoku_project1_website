@@ -1,7 +1,7 @@
 # CS5610_sudoku_project1_website
 A static sudoku website for project1
 
-**Video Link:**
+**[Click here to visit the video introduction](https://www.youtube.com/watch?v=sd1wLFB4vSY)**
 
 # Static Sudoku Website Project
 
