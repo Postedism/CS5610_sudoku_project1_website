@@ -9,7 +9,7 @@ The goal of this project is to build a multi-page, mobile-friendly static websit
 
 ## Live URL
 
-**[Click here to visit my website](https://github.com/Postedism/CS5610_sudoku_project1_website)**
+**[Click here to visit my website](https://postedism.github.io/CS5610_sudoku_project1_website/)**
 
 ## Author
 
